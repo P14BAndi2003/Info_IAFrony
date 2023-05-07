@@ -1,96 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Basic Page Info -->
-    <meta charset="utf-8">
-    <title>Accueil Admin</title>
+<meta charset="utf-8">
+	<title>{{ $article->titre }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="{{ $article->description }}">  
 
-    <!-- Site favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/vendors/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/vendors/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/vendors/images/favicon-16x16.png">
+	
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link rel="stylesheet" href="assets/css/base.css">
+   <link rel="stylesheet" href="assets/css/vendor.css">  
+   <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/vendors/styles/core.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendors/styles/icon-font.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendors/styles/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/src/plugins/datatables/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/src/plugins/datatables/css/responsive.bootstrap4.min.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-        gtag('config', 'UA-119386393-1');
-    </script>
 </head>
-<body>
 
-<div class="header">
-    <div class="header-left">
-        <div class="menu-icon dw dw-menu"></div>
+<body id="top">
 
-    </div>
-    <div class="header-right">
-        <div class="user-info-dropdown">
-            <div class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+	<!-- header 
+   ================================================== -->
+   <header class="short-header">   
 
-                    <span class="user-name">@if(session()->has('admin'))
-   {{ session('admin')->email }}
-@endif</span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                    <a class="dropdown-item" href="{{url('/logoutAdmin')}}"><i class="dw dw-logout"></i> Log Out</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+   	<div class="gradient-block"></div>	
 
-<div class="left-side-bar">
-    <div class="menu-block customscroll">
-        <div class="sidebar-menu">
-            <ul id="accordion-menu">
-            
-                <li>
-                    <a href="{{url('/liste')}}" class="dropdown-toggle no-arrow">
-                        <span class="icon-copy fa fa-newspaper-o" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<span class="mtext">Aucune option</span>
-                    </a>
-                </li>
-           
+   	<div class="row header-content">
 
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="mobile-menu-overlay"></div>
+   		<div class="logo">
+	         <a href="index.html">Author</a>
+	      </div>
 
-<div class="main-container">
-    <div class="pd-ltr-20 xs-pd-20-10">
-        <div class="min-height-200px">
-            <div class="page-header">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="title">
-                            <h4>Tous les articles</h4>
-                        </div>
+	   	<nav id="main-nav-wrap">
+			
+			</nav> <!-- end main-nav-wrap -->
 
-                    </div>
+		
+   	</div>     		
+   	
+   </header> <!-- end header -->
+   
 
-                </div>
-            </div>
+   <!-- content
+   ================================================== -->
+   <section id="content-wrap" class="blog-single">
+   	<div class="row">
+   		<div class="col-twelve">
 
+   			<article class="format-standard">  
 
-			<h1 class="page-title">{{ $article->titre }}</h1>	
+   				<div class="content-media">
+<center><div class="post-thumb">
+							<img src="data:image/png;base64,{{ $article->image }}"> 
+						</div>  </center>
+					</div>
+
+					<div class="primary-content">
+
+						<h1 class="page-title">{{ $article->titre }}</h1>	
 
 						<ul class="entry-meta">
 							<li class="date">{{ $article->datecreation->format('d/m/Y') }}</li>						
@@ -101,26 +69,49 @@
 						<h3 class="lead">{{$article->description}}</h3>
 						{!!$article->contenu!!}
 						
-                    </table>
-                </div>
-            </div>
-        </div>
+		  	
+					</div> <!-- end entry-primary -->		  			   
+
+	  			
+
+				</article>
+   		
+
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->
 
 
-    </div>
-    <div class="footer-wrap pd-20 mb-20 card-box">
-    © Copyright 2023
-    </div>
-</div>
-</div>
-<!-- js -->
 
-<script src="assets/vendors/scripts/core.js"></script>
-    <script src="assets/vendors/scripts/script.min.js"></script>
-    <script src="assets/vendors/scripts/process.js"></script>
-    <script src="assets/vendors/scripts/layout-settings.js"></script>
+   </section> <!-- end content -->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   	
+      <div class="footer-bottom">
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright 2023</span> 
+		         	<span>Design by <a href="">Someone</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> 
+      </div> <!-- end footer-bottom -->  
+
+   </footer>  
+
+   <script src="assets/js/jquery-2.1.3.min.js"></script>
+   <script src="assets/js/plugins.js"></script>
+   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-
-
-
