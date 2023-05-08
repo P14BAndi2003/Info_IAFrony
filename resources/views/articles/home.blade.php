@@ -126,17 +126,17 @@
 		</footer>
 		<!-- End Footer -->
 
-		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/jquery.migrate.js"></script>
-		<script src="assets/scripts/bootstrap/bootstrap.min.js"></script>
-		<script src="assets/scripts/jquery-number/jquery.number.min.js"></script>
-		<script src="assets/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
-		<script src="assets/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-		<script src="assets/scripts/easescroll/jquery.easeScroll.js"></script>
-		<script src="assets/scripts/sweetalert/dist/sweetalert.min.js"></script>
-		<script src="assets/scripts/toast/jquery.toast.min.js"></script>
-		<script src="assets/js/demo.js"></script>
-		<script src="assets/js/e-magz.js"></script>
+		<script type="application/javascript" src="assets/js/jquery.js"></script>
+		<script type="application/javascript" src="assets/js/jquery.migrate.js"></script>
+		<script type="application/javascript" src="assets/scripts/bootstrap/bootstrap.min.js"></script>
+		<script type="application/javascript" src="assets/scripts/jquery-number/jquery.number.min.js"></script>
+		<script type="application/javascript" src="assets/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+		<script type="application/javascript" src="assets/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<script type="application/javascript" src="assets/scripts/easescroll/jquery.easeScroll.js"></script>
+		<script type="application/javascript" src="assets/scripts/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="application/javascript" src="assets/scripts/toast/jquery.toast.min.js"></script>
+		<script type="application/javascript" src="assets/js/demo.js"></script>
+		<script type="application/javascript" src="assets/js/e-magz.js"></script>
 	</body>
 </html>
 
