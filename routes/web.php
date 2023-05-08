@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Middleware\CacheStaticFiles;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +18,7 @@ use Illuminate\Http\Middleware\CacheStaticFiles;
     return view('welcome');
 });
 */
-Route::middleware('cache.static')->group(function () {
+Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function () {
 Route::get('/', \App\Http\Controllers\ArticleController::class . '@listes');
 Route::get('/{id}-{slug?}-{randch?}', [\App\Http\Controllers\ArticleController::class, 'retail'])->name('articles.retail');
 });
