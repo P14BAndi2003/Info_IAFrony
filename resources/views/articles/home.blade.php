@@ -10,10 +10,10 @@
 		<!-- Shareable -->
 		<title>Tous les derniers articles de l'IA sur IA_Info</title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet"   type="text/css" href="assets/scripts/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/scripts/bootstrap/bootstrap.min.css">
 		<!-- IonIcons -->
 		<!-- Toast -->
-		<link rel="stylesheet"   type="text/css" href="assets/scripts/toast/jquery.toast.min.css">
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/scripts/toast/jquery.toast.min.css">
 		<!-- OwlCarousel -->
 		<link rel="stylesheet"   type="text/css" href="assets/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
 		<link rel="stylesheet"   type="text/css" href="assets/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
