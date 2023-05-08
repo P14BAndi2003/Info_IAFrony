@@ -10,7 +10,7 @@
 		<!-- Shareable -->
 		<title>Tous les derniers articles de l'IA sur IA_Info</title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet"   type="text/css" href="assets/scripts/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet"   type="text/css"href="{{ asset('assets/scripts/bootstrap/bootstrap.min.css') }}">
 		<!-- IonIcons -->
 		<!-- Toast -->
 		<link rel="stylesheet"   type="text/css" href="assets/scripts/toast/jquery.toast.min.css">
