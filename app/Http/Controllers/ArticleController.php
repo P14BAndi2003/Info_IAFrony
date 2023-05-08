@@ -20,7 +20,7 @@ class ArticleController extends Controller
         if(!$pagines)
         {
             $pagines = Article::where('statut', 1)->orderBy('datecreation', 'desc')->paginate(6);
-            Cache::put('ma_cle', $pagines, 1000);
+            Cache::put('ma_cle', $pagines, 100000);
         }
 
        
@@ -31,7 +31,7 @@ class ArticleController extends Controller
     public function retail($id)
     {
    
-        $article = Cache::remember('article_' . $id, 6000, function () use ($id) {
+        $article = Cache::remember('article_' . $id, 600000, function () use ($id) {
             return Article::find($id);
         });
     
