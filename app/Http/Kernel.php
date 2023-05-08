@@ -19,14 +19,14 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrustProxies::class,
         \Illuminate\Http\Middleware\HandleCors::class,
         \App\Http\Middleware\CacheMiddleware::class,
-        \App\Http\Middleware\GzipMiddleware::class,
+        \App\Http\Middleware\CacheStaticFilesMiddleware::class,
         \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \Illuminate\Http\Middleware\SetCacheHeaders::class,
       //  \App\Http\Middleware\CacheMiddleware::class,
-       // \App\Http\Middleware\GzipMiddleware::class,
+        \App\Http\Middleware\GzipMiddleware::class,
     ];
 
     /**
