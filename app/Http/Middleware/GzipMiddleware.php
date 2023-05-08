@@ -16,9 +16,19 @@ class GzipMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         
-        $response = $next($request);
+       /* $response = $next($request);
         $response -> header('Content-Encoding','gzip');
         $response -> setContent(gzencode($response->getContent(),9));
+        return $response; */
+        $response = $next($request);
+        $accept_encoding = $request->header('Accept-Encoding');
+        if (strpos($accept_encoding, 'gzip') !== false && $response->getStatusCode() == 200) {
+            $content = gzencode($response->getContent(), 9);
+            $response->setContent($content);
+            $response->header('Content-Encoding', 'gzip');
+            $response->header('Vary', 'Accept-Encoding');
+            $response->header('Content-Length', strlen($content));
+        }
         return $response;
     }
 }
