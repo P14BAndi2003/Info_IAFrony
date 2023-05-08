@@ -19,9 +19,9 @@ class CacheMiddleware
 
 
     // Configure cache headers for static files
-        if (in_array($response->getStatusCode(), [200, 201, 203, 204, 206, 300, 301, 302, 304, 307, 308])) {
+  //      if (in_array($response->getStatusCode(), [200, 201, 203, 204, 206, 300, 301, 302, 304, 307, 308])) {
             $response->header('Cache-Control', 'public, max-age=31539000, immutable');
-        }
+ //       }
 
         return $response;
     }

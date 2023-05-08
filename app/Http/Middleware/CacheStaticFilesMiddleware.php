@@ -19,7 +19,7 @@ class CacheStaticFilesMiddleware
         $response = $next($request);
 
         // Vérifiez que la réponse est un objet Response et que le code de statut est 200 (OK)
-        if ($response->isSuccessful()) {
+      
             // Récupérez l'URL de la requête
             $url = $request->url();
 
@@ -28,7 +28,7 @@ class CacheStaticFilesMiddleware
                 // Ajoutez un en-tête de cache
                 $response->header('Cache-Control', 'public, max-age=31536000, immutable');
             }
-        }
+        
 
         return $response;
     }
