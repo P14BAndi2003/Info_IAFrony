@@ -17,10 +17,10 @@ class CacheMiddleware
     {
         $response = $next($request);
 
-        if (in_array($response->getStatusCode(),[200,203,206]))
-        {
-            $response->header('Cache-Control','public, max-age=31537000');
-        }
+        
+        
+            $response->header('Cache-Control','public, max-age=31537000 , immutable');
+        
 
         return $response;
     }
