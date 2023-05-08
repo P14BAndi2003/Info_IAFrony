@@ -19,7 +19,7 @@ class ArticleController extends Controller
         $pagines = Cache::get('ma_cle');
         if(!$pagines)
         {
-            $pagines = Article::where('statut', 1)->orderBy('datecreation', 'desc')->paginate(3);
+            $pagines = Article::where('statut', 1)->orderBy('datecreation', 'desc')->paginate(25);
             Cache::put('ma_cle', $pagines, 100000);
         }
 
