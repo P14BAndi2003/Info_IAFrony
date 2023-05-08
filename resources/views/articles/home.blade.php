@@ -6,7 +6,7 @@
 		<meta http-equiv="Cache-Control" content="max-age=2592000, public">
   <meta http-equiv="Expires" content="Sun, 06 Jun 2023 00:00:00 GMT">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-		<meta name="description" content="Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA">
+	<meta name="description" content="Un site spécialisé sur les informations sur l'IA | IA_Info est en voie de développement pour donner le plus d'expérience possible aux amoureux de l'informatique surtout de l'IA">
 		<!-- Shareable -->
 		<title>Tous les derniers articles de l'IA sur IA_Info</title>
 		<!-- Bootstrap -->
@@ -20,6 +20,7 @@
 		<!-- Magnific Popup -->
 		<link rel="stylesheet" href="assets/scripts/magnific-popup/dist/magnific-popup.css">
 		<!-- Custom style -->
+		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/skins/all.css">
 		<link rel="stylesheet" href="assets/css/demo.css">
 	</head>
