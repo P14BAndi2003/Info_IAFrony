@@ -10,48 +10,20 @@
 		<!-- Shareable -->
 		<title>Tous les derniers articles de l'IA sur IA_Info</title>
 		<!-- Bootstrap -->
-	    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/bootstrap/bootstrap.min.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/toast/jquery.toast.min.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/owlcarousel/dist/assets/owl.carousel.min.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/owlcarousel/dist/assets/owl.theme.default.min.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/magnific-popup/dist/magnific-popup.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/css/style.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/css/skins/all.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/css/demo.css', ['as' => 'style', 'type' => 'text/css', 'nopush' => true]) !!}
-    
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/js/jquery.js', ['as' => 'script', 'type' => 'application/javascript', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/js/jquery.migrate.js', ['as' => 'script', 'type' => 'application/javascript', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/bootstrap/bootstrap.min.js', ['as' => 'script', 'type' => 'application/javascript', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/jquery-number/jquery.number.min.js', ['as' => 'script', 'type' => 'application/javascript', 'nopush' => true]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/owlcarousel/dist/owl.carousel.min.js', ['as' => 'script', 'type' => 'application/javascript', 'nopush' => true]) !!}}	
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/magnific-popup/dist/jquery.magnific-popup.min.js', [
-        'as' => 'script',
-        'type' => 'application/javascript',
-        'nopush' => true,
-    ]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/easescroll/jquery.easeScroll.js', [
-        'as' => 'script',
-        'type' => 'application/javascript',
-        'nopush' => true,
-    ]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/sweetalert/dist/sweetalert.min.js', [
-        'as' => 'script',
-        'type' => 'application/javascript',
-        'nopush' => true,
-    ]) !!}
-    {!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/scripts/toast/jquery.toast.min.js', [
-        'as' => 'script',
-        'type' => 'application/javascript',
-        'nopush' => true,
-    ]) !!}
-	{!! Html::linkPreload('https://infoiafrony-production.up.railway.app/assets/js/e-magz.js', [
-        'as' => 'script',
-        'type' => 'application/javascript',
-        'nopush' => true,
-    ]) !!}
-
-
-</head>
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/scripts/bootstrap/bootstrap.min.css">
+		<!-- IonIcons -->
+		<!-- Toast -->
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/scripts/toast/jquery.toast.min.css">
+		<!-- OwlCarousel -->
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+		<!-- Magnific Popup -->
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/scripts/magnific-popup/dist/magnific-popup.css">
+		<!-- Custom style -->
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/css/style.css">
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/css/skins/all.css">
+		<link rel="stylesheet"   type="text/css" href="https://infoiafrony-production.up.railway.app/assets/css/demo.css">
+	</head>
 
 	<body class="skin-orange">
 		<header class="primary">
@@ -152,7 +124,18 @@
 		</footer>
 		<!-- End Footer -->
 
-		</body>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/js/jquery.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/js/jquery.migrate.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/scripts/bootstrap/bootstrap.min.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/scripts/jquery-number/jquery.number.min.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/scripts/easescroll/jquery.easeScroll.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/scripts/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/scripts/toast/jquery.toast.min.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/js/demo.js"></script>
+		<script type="application/javascript" src="https://infoiafrony-production.up.railway.app/assets/js/e-magz.js"></script>
+	</body>
 </html>
 
 
