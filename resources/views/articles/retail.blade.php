@@ -12,7 +12,6 @@
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="assets/scripts/bootstrap/bootstrap.min.css">
 		<!-- IonIcons -->
-		<link rel="stylesheet" href="assets/scripts/ionicons/css/ionicons.min.css">
 		<!-- Toast -->
 		<link rel="stylesheet" href="assets/scripts/toast/jquery.toast.min.css">
 		<!-- OwlCarousel -->
@@ -22,7 +21,6 @@
 		<link rel="stylesheet" href="assets/scripts/magnific-popup/dist/magnific-popup.css">
 		<link rel="stylesheet" href="assets/scripts/sweetalert/dist/sweetalert.css">
 		<!-- Custom style -->
-		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/skins/all.css">
 		<link rel="stylesheet" href="assets/css/demo.css">
 	</head>
