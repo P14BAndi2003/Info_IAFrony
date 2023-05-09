@@ -24,5 +24,10 @@ class AppServiceProvider extends ServiceProvider
         {
             ob_start("ob_gzhandler");
         }*/
+        if($this->app->environment('production'))
+        {
+            URL::forceScheme('https');
+        }
+
     }
 }
