@@ -122,7 +122,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- End Footer -->
+		<!-- End Foother -->
 
 		<script type="application/javascript" src="{{asset('assets/js/jquery.js')}}"></script>
 		<script type="application/javascript" src="{{asset('assets/js/jquery.migrate.js')}}"></script>
